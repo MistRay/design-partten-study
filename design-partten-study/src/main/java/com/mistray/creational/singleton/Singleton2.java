@@ -5,7 +5,7 @@ package com.mistray.creational.singleton;
  * @create 2018-08-22
  * @desc 饿汉式->静态代码块->线程安全
  */
-public class Singleton2 {
+public class Singleton2 implements  Singleton{
     private static Singleton2 instance;
 
     // 静态代码块在类加载是就会执行

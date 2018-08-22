@@ -5,7 +5,7 @@ package com.mistray.creational.singleton;
  * @create 2018-08-22
  * @desc 懒汉式 -> 双重检查 -> 线程安全
  */
-public class Singleton5 {
+public class Singleton5 implements  Singleton{
     private static Singleton5 instance;
 
     private Singleton5() {

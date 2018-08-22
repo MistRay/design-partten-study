@@ -5,7 +5,7 @@ package com.mistray.creational.singleton;
  * @create 2018-08-22
  * @desc 懒汉式->线程不安全
  */
-public class Singleton1 {
+public class Singleton1 implements  Singleton{
     private static Singleton1 singleton = null;
 
     /**

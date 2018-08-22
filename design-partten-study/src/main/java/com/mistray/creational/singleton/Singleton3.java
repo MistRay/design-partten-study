@@ -5,7 +5,7 @@ package com.mistray.creational.singleton;
  * @create 2018-08-22
  * @desc 懒汉式->线程安全(使用)->效率低
  */
-public class Singleton3 {
+public class Singleton3 implements  Singleton{
     private static Singleton3 instance;
 
     private Singleton3() {

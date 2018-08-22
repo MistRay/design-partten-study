@@ -3,9 +3,9 @@ package com.mistray.creational.singleton;
 /**
  * @author MistLight
  * @create 2018-08-22
- * @desc 懒汉式->线程安全->同步代码块
+ * @desc 懒汉式->线程不安全->同步代码块
  */
-public class Singleton4 {
+public class Singleton4 implements Singleton {
     private static Singleton4 instance;
 
     /**
@@ -15,7 +15,9 @@ public class Singleton4 {
     }
 
     /**
-     * 线程安全,但效率低下,串行获取实例
+     * 线程不安全,这种同步并不能起到线程同步的作用。
+     * 假如一个线程进入了if (singleton == null)判断语句块，
+     * 还未来得及往下执行，另一个线程也通过了这个判断语句，这时便会产生多个实例。
      *
      * @return Singleton4
      */
@@ -29,26 +31,4 @@ public class Singleton4 {
     }
 
 
-    public static void main(String[] args) {
-        Thread thread = new Thread(() -> {
-            Singleton4 instance = Singleton4.getInstance();
-            System.out.println(instance);
-        });
-        Thread thread1 = new Thread(() -> {
-            Singleton4 instance = Singleton4.getInstance();
-            System.out.println(instance);
-        });
-        Thread thread2 = new Thread(() -> {
-            Singleton4 instance = Singleton4.getInstance();
-            System.out.println(instance);
-        });
-        Thread thread3 = new Thread(() -> {
-            Singleton4 instance = Singleton4.getInstance();
-            System.out.println(instance);
-        });
-        thread.start();
-        thread1.start();
-        thread2.start();
-        thread3.start();
-    }
 }
