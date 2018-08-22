@@ -3,7 +3,7 @@ package com.mistray.creational.singleton;
 /**
  * @author MistLight
  * @create 2018-08-22
- * @desc 懒汉式 -> 双重检查 -> 线程安全
+ * @desc 懒汉式 -> 双重检查 -> 优点：线程安全；延迟加载；效率较高。
  */
 public class Singleton5 implements  Singleton{
     private static Singleton5 instance;
