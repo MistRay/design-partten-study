@@ -8,19 +8,19 @@ package com.mistray.creational.singleton;
 public class SingletonTest {
     public static void main(String[] args) {
         Thread thread = new Thread(() -> {
-            Singleton instance = Singleton4.getInstance();
+            Singleton instance = Singleton5.getInstance();
             System.out.println(instance);
         });
         Thread thread1 = new Thread(() -> {
-            Singleton instance = Singleton4.getInstance();
+            Singleton instance = Singleton5.getInstance();
             System.out.println(instance);
         });
         Thread thread2 = new Thread(() -> {
-            Singleton instance = Singleton4.getInstance();
+            Singleton instance = Singleton5.getInstance();
             System.out.println(instance);
         });
         Thread thread3 = new Thread(() -> {
-            Singleton instance = Singleton4.getInstance();
+            Singleton instance = Singleton5.getInstance();
             System.out.println(instance);
         });
         thread.start();
