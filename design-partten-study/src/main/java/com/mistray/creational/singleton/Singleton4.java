@@ -23,6 +23,7 @@ public class Singleton4 implements Singleton {
      */
     public static Singleton4 getInstance() {
         if (null == instance) {
+            // instance对于多线程情况下,并不是实时可见的
             synchronized (Singleton4.class) {
                 instance = new Singleton4();
             }
