@@ -1,4 +1,6 @@
-package com.mistray.creational.factory;
+package com.mistray.creational.factory.simple;
+
+import com.mistray.creational.factory.bean.Human;
 
 /**
  * @author MistLight

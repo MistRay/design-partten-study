@@ -1,4 +1,4 @@
-package com.mistray.creational.factory;
+package com.mistray.creational.factory.bean;
 
 /**
  * @author MistLight
