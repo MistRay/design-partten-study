@@ -40,6 +40,7 @@ public class HummerH1Model extends HummerModel {
 
     /**
      * 要不要响喇叭,是由客户来决定的
+     * 钩子方法:由子类的一个方法返回值决定公共部分的执行结果.
      * @param isAlarm
      */
     public void setAlarm(boolean isAlarm){
