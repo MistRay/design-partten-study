@@ -26,4 +26,12 @@ public class HummerH2Model extends HummerModel {
         System.out.println("悍马H2引擎轰鸣..轰隆隆");
     }
 
+    /**
+     * 默认是没有喇叭的
+     * @return
+     */
+    @Override
+    public boolean isAlarm() {
+        return false;
+    }
 }

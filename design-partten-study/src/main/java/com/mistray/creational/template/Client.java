@@ -26,7 +26,9 @@ import com.mistray.creational.template.bean.HummerModel;
  */
 public class Client {
     public static void main(String[] args) {
-        HummerModel hummerH1Model = new HummerH1Model();
+        HummerH1Model hummerH1Model = new HummerH1Model();
+//        hummerH1Model.setAlarm(false);
+        hummerH1Model.setAlarm(true);
         HummerModel hummerH2Model = new HummerH2Model();
         hummerH1Model.run();
         hummerH2Model.run();

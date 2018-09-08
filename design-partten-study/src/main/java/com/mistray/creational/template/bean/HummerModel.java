@@ -29,14 +29,24 @@ public abstract class HummerModel {
     /**
      * 应该能跑
      */
-    public void run(){
+    public void run() {
         // 发动
         this.start();
         // 引擎轰鸣
         this.engineBoom();
-        // 鸣笛
-        this.alarm();
+        // 可以控制喇叭是否要响
+        if (isAlarm()) {
+            // 鸣笛
+            this.alarm();
+        }
         // 停止
         this.stop();
+    }
+
+    /**
+     * 钩子方法,默认喇叭是会响的
+     */
+    public boolean isAlarm() {
+        return true;
     }
 }
