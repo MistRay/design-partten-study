@@ -1,4 +1,4 @@
-package com.mistray.creational.template.bean;
+package com.mistray.behavioral.template.bean;
 
 /**
  * @author MistLight

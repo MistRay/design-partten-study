@@ -1,8 +1,8 @@
-package com.mistray.creational.template;
+package com.mistray.behavioral.template;
 
-import com.mistray.creational.template.bean.HummerH1Model;
-import com.mistray.creational.template.bean.HummerH2Model;
-import com.mistray.creational.template.bean.HummerModel;
+import com.mistray.behavioral.template.bean.HummerH1Model;
+import com.mistray.behavioral.template.bean.HummerH2Model;
+import com.mistray.behavioral.template.bean.HummerModel;
 
 /**
  * @author MistLight
