@@ -4,6 +4,7 @@ package com.mistray.creational.template.bean;
  * @author MistLight
  * @create 2018-09-07
  * @desc H1型号悍马模型
+ * 在我们的抽象类中isAlarm的返回值就是影响了模版方法的执行结果,该方法叫做钩子方法.
  */
 public class HummerH1Model extends HummerModel {
 
