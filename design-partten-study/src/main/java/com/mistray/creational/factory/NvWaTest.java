@@ -14,8 +14,11 @@ public class NvWaTest {
 
 
     public static void main(String[] args) {
+        // 创建一个黑种人工厂
         BlackHumanFactory blackHumanFactory = new BlackHumanFactory();
+        // 创建一个白种人工厂
         WhiteHumanFactory whiteHumanFactory = new WhiteHumanFactory();
+        // 创建一个黄种人工厂
         YellowHumanFactory yellowHumanFactory = new YellowHumanFactory();
         Human black = blackHumanFactory.createHuman();
         black.getColor();

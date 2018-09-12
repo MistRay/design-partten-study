@@ -8,7 +8,7 @@ import java.util.ArrayList;
 /**
  * @author MistLight
  * @create 2018-09-08
- * @desc 奔驰组装者
+ * @desc 奔驰组装者->实际建造者
  */
 public class BenzBuilder extends CarBuilder {
     private BenzModel benz = new BenzModel();

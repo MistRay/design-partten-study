@@ -26,9 +26,11 @@ import com.mistray.behavioral.template.bean.HummerModel;
  */
 public class Client {
     public static void main(String[] args) {
+        // 创建一个H1悍马模版
         HummerH1Model hummerH1Model = new HummerH1Model();
 //        hummerH1Model.setAlarm(false);
         hummerH1Model.setAlarm(true);
+        // 创建一个H2悍马模版
         HummerModel hummerH2Model = new HummerH2Model();
         hummerH1Model.run();
         hummerH2Model.run();
