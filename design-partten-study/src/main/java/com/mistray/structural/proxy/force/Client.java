@@ -1,5 +1,6 @@
 package com.mistray.structural.proxy.force;
 
+
 import com.mistray.structural.proxy.force.bean.GamePlayer;
 import com.mistray.structural.proxy.force.interfaces.IGamePlayer;
 
